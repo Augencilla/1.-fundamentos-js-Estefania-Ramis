@@ -5,6 +5,10 @@ const porcentajeIva = 21;
 
 
 let subtotal = precio * cantidad;
+let iva = subtotal * porcentajeIva / 100;
+
 
 console.log(`Producto: ${producto}`)
 console.log(`${cantidad} x ${precio.toFixed(2)} €`)
+console.log(`Subtotal: ${subtotal.toFixed(2)} €`)
+console.log(`IVA (21%): ${iva.toFixed(2)} €`)
