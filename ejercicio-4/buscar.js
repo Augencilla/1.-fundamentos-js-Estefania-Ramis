@@ -6,18 +6,8 @@ let buscado = "Ratón";
 let posicion = -1;
 
 for (let i = 0; i < productos.length; i++) {
-    if (productos[i].toLowerCase() === buscado.toLowerCase()) {
+    if (productos[i] === buscado) {
         posicion = i;
     
 }
-}
-
-//IA: Me ayudó a ver que la posición debía empezar por -1, ya que 0 es una posición válida en un array.
-if (posicion === -1) {
-        console.log (`Posición: ${posicion}. ${buscado} no existe en el catálogo.`)    
-
-//IA: Intentaba poner [i] en la llamada de las variables pero no funcionaba, la IA me explicó que debía escribir el nombre de la variable [posición].
-} else {
-        console.log(`${buscado} está en la posición ${posicion}. Precio: ${precios[posicion].toFixed(2)} €. Stock: ${stock[posicion]}`)      
-
 }
