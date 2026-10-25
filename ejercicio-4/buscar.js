@@ -6,7 +6,7 @@ let buscado = "Ratón";
 let posicion = -1;
 
 for (let i = 0; i < productos.length; i++) {
-    if (productos[i] === buscado) {
+    if (productos[i].toLowerCase() === buscado.toLowerCase()) {
         posicion = i;
     
 }
