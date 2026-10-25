@@ -14,3 +14,13 @@ if (importe > 100) {
     } else {
     console.log("Sin descuento")
 } 
+
+ if (importe - descuento >= 50 ) {
+    envio = 0;
+    console.log(`Gastos de envío: Gratis`)
+    
+    
+} else {
+    envio = 4.95;
+    console.log(`Gastos de envío: ${envio.toFixed(2)}€`)
+}
