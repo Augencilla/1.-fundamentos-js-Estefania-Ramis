@@ -34,4 +34,11 @@ for (let i = 0; i < precios.length; i++) {
 }
         console.log(`Producto más caro: ${productos[posMax]} (${precios[posMax].toFixed(2)} €)`)
 
+let total = 0;
+for (let i = 0; i < productos.length; i++) {
+        
+        total = total + (precios[i] * stock[i]);
+
+}
+        console.log(`Valor del inventario: ${total.toFixed(2)} €`)
 
