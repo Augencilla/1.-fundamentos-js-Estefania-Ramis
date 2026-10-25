@@ -12,3 +12,16 @@ if (stock[i] === 0){
 
 }
 
+//IA: Me ayudó a ver que estaba poniendo mal la variable agotados, debía empezar con un valor 0, para que en el bucle se fuera sumando.
+let agotados = 0;
+
+for (let i = 0; i < stock.length; i++) {
+
+        if (stock[i] === 0) {
+                agotados++;
+        }
+        }
+
+        console.log(`Productos Agotados: ${agotados}`);
+
+
