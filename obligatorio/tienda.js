@@ -129,7 +129,29 @@ function procesarPedido(){
     console.log(`TOTAL: ${total.toFixed(2)} €`);
 
     console.log("");
+
+    console.log(" === STOCK ACTUALIZADO === ");
+
+    for (let i = 0; i < productos.length; i++) {
+        console.log(`${productos[i]}: ${stock[i]}`);
+    }
+
+
+    let listaAgotados = [];
+
+    for (let i = 0; i < productos.length; i++) {
+        if (stock[i] === 0) {
+            listaAgotados.push(productos[i]);
+        }
+
+    }
+        //IA: Me ayudó a separar los productos agotados con una coma con .join
+        if (listaAgotados.length > 0) {
+            console.log(`Agotados: ${listaAgotados.join(", ")}`);
+        } else {
+            console.log(`Agotados: ninguno`);
+}
 }
 
 mostrarCatalogo();
-procesarPedido(pedidoProductos)
+procesarPedido(pedidoProductos, pedidoCantidades)
