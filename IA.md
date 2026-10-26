@@ -3,8 +3,7 @@
 | Fecha | Ejercicio | Herramienta | Qué le pedí (prompt) | Qué me respondió | Qué hice con la respuesta |
 |---|---|---|---|---|---|
 | 14/10 | Ej. 1 | No he usado IA |  |  |  |
-| 14/10 | Ej. 2 | Claude | Le pedí, sin darme la solución, que me ayudase a
-entender por qué mi condicional de gastos de envío no funciona. | Me ayudó a ver que no estaba aplicando bien la operación para calcular los gastos de envío ya que no estaba aplicando el. | Me di cuenta de que debía poner debía poner "importe - descuento". |
+| 14/10 | Ej. 2 | Claude | Le pedí, sin darme la solución, que me ayudase a entender por qué mi condicional de gastos de envío no funciona. | Me ayudó a ver que no estaba aplicando bien la operación para calcular los gastos de envío ya que no estaba aplicando el. | Me di cuenta de que debía poner debía poner "importe - descuento". |
 | 14/10 | Ej. 3 | Claude | Pedí un pseudocódigo para entender cómo recorrer el array y poder mostrar el catálogo. | Me explicó cómo hacer el bucle con la variable i. | Entendí que debía usar [i] para que recorriese el array de los productos, su precio y su stock |
 | 18/10 | Ej. 3 | Claude | Le pedía ayuda con el bucle porque no entendía la lógica | Me preguntó que en qué valor debería empezar la variable | Entemdía que la variable debía empezar en 0, para que en el bucle se fuera sumando |
 | 20/10 | Ej. 3 | Claude | Le pedí ayuda con la llamada de las constantes en el console.log | Me dijo que debía incluir posMax a la hora de mostrarlo | Al final probando como hacerlo entendí que debía ponerlo dentro de corchetes []. |
