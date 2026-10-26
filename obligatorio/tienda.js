@@ -104,6 +104,32 @@ function procesarPedido(){
     let envio = calcularEnvio(baseImponible);
     let total = calcularTotal(baseImponible, iva, envio);
 
+
+    console.log("");
+
+
+
+    console.log(" === TICKET === ");
+
+    for (let i = 0; i < lineasTicket.length; i++) {
+        let linea = lineasTicket[i];
+
+        console.log(`${linea.cantidad} x ${linea.producto} (${linea.precio.toFixed(2)} €) = ${linea.importe.toFixed(2)} €`);
+    }
+    
+    console.log(`Subtotal: ${subTotal.toFixed(2)} €`);
+    console.log(`Descuento: -${descuento.toFixed(2)} €`);
+    console.log(`Base imponible: ${baseImponible.toFixed(2)} €`);
+    console.log(`IVA (21%): ${iva.toFixed(2)} €`);
+    if (envio === 0) {
+    console.log(`Envío: Gratis`);
+    } else {
+    console.log(`Envío: ${envio.toFixed(2)} €`);
+    }
+    console.log(`TOTAL: ${total.toFixed(2)} €`);
+
+    console.log("");
 }
 
 mostrarCatalogo();
+procesarPedido(pedidoProductos)
